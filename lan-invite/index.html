@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Zenra - Invitation LAN</title>
+  <meta http-equiv="refresh" content="0; url=zenra://lan-invite/PAYLOAD">
+  <script>
+    const payload = location.pathname.split('/lan-invite/')[1] || '';
+    if (payload) {
+      window.location.href = `zenra://lan-invite/${payload}`;
+    }
+  </script>
+</head>
+<body>
+  <p>Redirection vers Zenra...</p>
+</body>
+</html>
